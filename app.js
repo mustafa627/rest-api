@@ -1,4 +1,4 @@
-// app.js
+
 import express from 'express';
 import axios from 'axios';
 import cors from "cors"
@@ -19,7 +19,7 @@ app.get('/products/:id', async (req, res) => {
   console.log(productId)
 
   try {
-    // Step 1: Get product title from fakestoreapi
+    
     const response = await axios.get(`https://fakestoreapi.com/products/${productId}`);
     const product = response.data;
 
